@@ -7,6 +7,15 @@
 
 function countVowels(str) {
     // Your code here
+    str=str.toLowerCase();
+    var count =0;
+    for( var c of str){
+      count+=(c=='a'||c=='e'||c=='i'||c=='o'||c=='u');
+    }
+    // console.log(count)
+    return count;
+
 }
+countVowels("hemlo");
 
 module.exports = countVowels;
